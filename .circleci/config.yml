@@ -70,6 +70,8 @@ commands:
       - run:
           name: Login to Dockerhub
           command: docker login -u $DOCKER_USER -p $DOCKER_PASS
+                   docker tag spring2go/spring-petclinic-customers-service:1.0.0.RELEASE  284946040/spring-petclinic-customers-service:1.0.0.RELEASE
+
 
       # Download and cache dependencies
       - restore_cache:
