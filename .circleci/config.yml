@@ -89,7 +89,7 @@ commands:
       # push docker image to docker hub
       - run:
           name: tag image
-          command: docker tag spring2go/spring-petclinic-customers-service:Build-$CIRCLE_BUILD_NUM\-CI  284946040/spring-petclinic-customers-service:Build-$CIRCLE_BUILD_NUM\-CI
+          command: docker tag spring2go/spring-petclinic-customers-service:Build-${CIRCLE_BUILD_NUM}-CI  284946040/spring-petclinic-customers-service:Build-${CIRCLE_BUILD_NUM}-CI
       - run: mvn dockerfile:push -Ddocker.image.tag=Build-${CIRCLE_BUILD_NUM}-CI
 
       # store raw content of src code
