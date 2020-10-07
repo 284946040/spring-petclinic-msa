@@ -72,7 +72,7 @@ commands:
           command: docker login -u $DOCKER_USER -p $DOCKER_PASS
       - run:
           name: tag image
-          command: docker tag spring2go/spring-petclinic-customers-service:Build-CIRCLE_BUILD_NUM-CI  284946040/spring-petclinic-customers-service:Build-CIRCLE_BUILD_NUM-CI
+          command: docker tag spring2go/spring-petclinic-customers-service:Build-$CIRCLE_BUILD_NUM\-CI  284946040/spring-petclinic-customers-service:Build-$CIRCLE_BUILD_NUM\-CI
     
       # Download and cache dependencies
       - restore_cache:
