@@ -9,3 +9,4 @@ EXPOSE ${EXPOSED_PORT}
 ENTRYPOINT exec java $JAVA_OPTS  -jar /usr/share/app.jar
 
 # for circleci deme02
+# for circleci demo02aaadn0wwww2002
